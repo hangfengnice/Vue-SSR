@@ -1,0 +1,26 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "vue, webpack, node, mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hangfengnice/Vue-SSR.git"
+  },
+  "keywords": [
+    "vue",
+    "node"
+  ],
+  "author": "hangfeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hangfengnice/Vue-SSR/issues"
+  },
+  "homepage": "https://github.com/hangfengnice/Vue-SSR#readme",
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
+}
