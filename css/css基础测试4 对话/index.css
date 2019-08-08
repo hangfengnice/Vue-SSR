@@ -1,0 +1,96 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.msg-list {
+  height: 100%;
+  overflow: auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.msg-item {
+  display: flex;
+  padding: 7px;
+  margin-bottom: 15px;
+}
+
+.msg-item::after {
+  content: '';
+  display: inline-block;
+  width: 44px;
+}
+
+.msg-avator {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.msg-info {
+  flex: 1;
+  text-align: start;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.msg-user {
+  margin: 0;
+  font-weight: normal;
+  font-size: 13px;
+  color: #949ead;
+}
+
+.msg-user span {
+  display: inline-block;
+}
+
+.msg-time {
+  padding: 0 8px;
+}
+
+.msg-txt {
+  position: relative;
+  display: inline-flex;
+  background: #f2f5f9;
+  border-color: #f2f5f9;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2c3038;
+  padding: .6em 1em;
+  text-align: left;
+  margin: 5px 0 0;
+  border-radius: 6px;
+}
+
+.msg-txt::before {
+  content: '';
+  position: absolute;
+  width: 1.4em;
+  height: 1.2em;
+  top: 0;
+  margin-inline-start: -3em;
+  -webkit-margin-start: -3em;
+  /**qq浏览器有点兼容性问题，需要加上这个**/
+  border-top-right-radius: 40% 50%;
+  border-top-left-radius: 40% 50%;
+  border-left: 0.6em solid;
+  border-right: 0.6em solid;
+  border-color: inherit;
+}
+
+/** data-self（message from myself） **/
+.msg-item[data-self] {
+  direction: rtl;
+  /*改变css流向*/
+}
+
+.msg-item[data-self] .msg-txt {
+  background: #00afff;
+  border-color: #00afff;
+  color: #fff;
+}
