@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    input[type="checkbox"]{
+      display:none;
+    }
+    label{
+      line-height:20px;
+      padding:2px 5px;
+      background:#aaa;
+      font-size:14px;
+      color:white;
+      box-shadow: 0 0 2px #888888;
+    }
+    label:active{
+   box-shadow:none;
+}
+.modal{
+  display:none;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,.3);
+}
+#checkbox:checked~.modal{
+  display:flex;
+}
+.close{
+  margin:auto;
+}
+  </style>
+</head>
+<body>
+  <div>
+    <label for="checkbox">
+        展示
+    </label>
+    <input id="checkbox" type="checkbox"></input>
+
+  <div class="modal">
+    <label class="close" for="checkbox">关闭</label>
+  </div>
+  </div>
+</body>
+</html>
