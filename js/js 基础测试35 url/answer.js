@@ -24,4 +24,15 @@ console.log(new URLSearchParams(object1).toString())
 // 3
 // console.log(location.search)
 
+// 4 
+const obj = {}
+for (var [key, value] of new URLSearchParams(location.search).entries()){
+ obj[key]=value
+};
 
+// 5
+const obj1 = {}
+const myParams = new URLSearchParams(location.search)
+for (var p of myParams.keys()){
+obj[p]=myParams.getAll(p).length > 1 ? myParams.getAll(p) : myParams.get(p);
+};
