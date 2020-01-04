@@ -1,0 +1,33 @@
+{
+  "name": "gulp_utils",
+  "version": "1.0.0",
+  "description": "gulp",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-changed": "^4.0.2",
+    "gulp-file-include": "^2.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hangfengnice/gulp.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "hangfeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hangfengnice/gulp/issues"
+  },
+  "homepage": "https://github.com/hangfengnice/gulp#readme"
+}
