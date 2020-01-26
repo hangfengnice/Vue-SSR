@@ -38,11 +38,11 @@ gulp.task("js", function() {
   return gulp
     .src("./src/js/*.js")
     .pipe(changed("build"), { extension: ".js" })
-    // .pipe(
-    //   babel({
-    //     presets: ["@babel/preset-env"]
-    //   })
-    // )
+    .pipe(
+      babel({
+        presets: ["@babel/preset-env"]
+      })
+    )
     .pipe(gulp.dest("build/js"))
     .pipe(
       browserSync.reload({
